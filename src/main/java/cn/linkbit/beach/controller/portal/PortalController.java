@@ -15,19 +15,15 @@ import org.springframework.web.bind.annotation.SessionAttributes;
  */
 @Controller
 @EnableAutoConfiguration
-@RequestMapping("/")
+@RequestMapping("/portal")
 @SessionAttributes("menuList")
 public class PortalController {
 
-    @Autowired
-    WorkOrderReportCartService workOrderReportCartService;
+    @RequestMapping(value = "/list")
+    public String list() {
 
-
-    @Autowired
-    PortalService portalService;
-
-
-
+        return "/portal/portal_content";
+    }
 
 
 }

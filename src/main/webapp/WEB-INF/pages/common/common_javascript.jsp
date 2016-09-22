@@ -35,8 +35,15 @@
 <script src="/statics/js/calendar/moment-2.2.1.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 
-<!--common scripts for all pages-->
-<script src="/statics/js/scripts.js"></script>
+<!--data table-->
+<script type="text/javascript" src="/statics/js/data-tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/statics/js/data-tables/DT_bootstrap.js"></script>
+
+<!--script for editable table-->
+<script src="/statics/js/editable-table.js"></script>
+
 
 <!--Dashboard Charts-->
 <script src="/statics/js/dashboard-chart-init.js"></script>
+<!--common scripts for all pages-->
+<script src="/statics/js/scripts.js"></script>

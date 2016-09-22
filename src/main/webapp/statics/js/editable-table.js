@@ -32,8 +32,8 @@ var EditableTable = function () {
                 oTable.fnUpdate(jqInputs[1].value, nRow, 1, false);
                 oTable.fnUpdate(jqInputs[2].value, nRow, 2, false);
                 oTable.fnUpdate(jqInputs[3].value, nRow, 3, false);
-                oTable.fnUpdate('<a class="edit" href="">Edit</a>', nRow, 4, false);
-                oTable.fnUpdate('<a class="delete" href="">Delete</a>', nRow, 5, false);
+                oTable.fnUpdate('<a class="edit" href="">编辑</a>', nRow, 4, false);
+                oTable.fnUpdate('<a class="delete" href="">删除</a>', nRow, 5, false);
                 oTable.fnDraw();
             }
 
@@ -43,14 +43,14 @@ var EditableTable = function () {
                 oTable.fnUpdate(jqInputs[1].value, nRow, 1, false);
                 oTable.fnUpdate(jqInputs[2].value, nRow, 2, false);
                 oTable.fnUpdate(jqInputs[3].value, nRow, 3, false);
-                oTable.fnUpdate('<a class="edit" href="">Edit</a>', nRow, 4, false);
+                oTable.fnUpdate('<a class="edit" href="">编辑</a>', nRow, 4, false);
                 oTable.fnDraw();
             }
 
             var oTable = $('#editable-sample').dataTable({
                 "aLengthMenu": [
-                    [5, 15, 20, -1],
-                    [5, 15, 20, "All"] // change per page values here
+                    [8, 10, 15, -1],
+                    [8, 10, 15, "All"] // change per page values here
                 ],
                 // set the initial value
                 "iDisplayLength": 5,
@@ -59,8 +59,8 @@ var EditableTable = function () {
                 "oLanguage": {
                     "sLengthMenu": "_MENU_ records per page",
                     "oPaginate": {
-                        "sPrevious": "Prev",
-                        "sNext": "Next"
+                        "sPrevious": "上一页",
+                        "sNext": "下一页"
                     }
                 },
                 "aoColumnDefs": [{
@@ -78,7 +78,7 @@ var EditableTable = function () {
             $('#editable-sample_new').click(function (e) {
                 e.preventDefault();
                 var aiNew = oTable.fnAddData(['', '', '', '',
-                        '<a class="edit" href="">Edit</a>', '<a class="cancel" data-mode="new" href="">Cancel</a>'
+                        '<a class="edit" href="">编辑</a>', '<a class="cancel" data-mode="new" href="">Cancel</a>'
                 ]);
                 var nRow = oTable.fnGetNodes(aiNew[0]);
                 editRow(oTable, nRow);

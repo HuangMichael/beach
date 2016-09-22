@@ -17,8 +17,10 @@
 			<!-- main content start-->
 			<div class="main-content">
 				<%@include file="../common/common_profile.jsp"%>
-				<%@include file="../common/common_heading.jsp"%>
+				<!--body wrapper start-->
+                <div class="wrapper" id="contentContainer">
 				<%@include file="portal_content.jsp"%>
+				</div>
 				<%@include file="../common/common_foot.jsp"%>
 			</div>
 			<!-- main content end-->

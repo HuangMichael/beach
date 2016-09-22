@@ -38,13 +38,13 @@
 		<!--sidebar nav start-->
 		<ul class="nav nav-pills nav-stacked custom-nav">
 			<li class="active">
-				<a href="#"><i class="fa fa-home"></i> <span>我的主页</span></a>
+				<a data-url="portal/list"><i class="fa fa-home"></i> <span>我的主页</span></a>
 			</li>
 			<li class="menu-list">
 				<a href="#"><i class="fa fa-laptop"></i> <span>系统设置</span></a>
 				<ul class="sub-menu-list">
 					<li>
-						<a data-url="user/list" >用户管理</a>
+						<a data-url="user/list">用户管理</a>
 					</li>
 					<li>
 						<a href="#">安全审计</a>
@@ -132,8 +132,9 @@
 <script type="text/javascript">
 	$(function() {
 		$("a").on("click", function() {
-			if($(this).data("url")) {
-				alert("我要链接到"+$(this).data("url"));
+			var linkTo = $(this).data("url");
+			if(linkTo) {
+				$("#contentContainer").load(linkTo);
 			}
 		})
 	})
