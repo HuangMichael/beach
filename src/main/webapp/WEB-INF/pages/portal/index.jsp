@@ -9,20 +9,20 @@
 		<meta name="author" content="ThemeBucket">
 		<link rel="shortcut icon" href="#" type="image/png">
 		<title>江苏省沿海滩涂围垦开发利用管理信息系统</title>
-		<%@include file="../common/common-css.jsp"%>
+		<%@include file="../common/common_css.jsp"%>
 	</head>
 	<body class="sticky-header">
 		<section>
-			<%@include file="../common/common-left.jsp"%>
+			<%@include file="../common/common_left.jsp"%>
 			<!-- main content start-->
 			<div class="main-content">
-				<%@include file="../common/common-profile.jsp"%>
-				<%@include file="../common/common-heading.jsp"%>
-				<%@include file="portal-content.jsp"%>
-				<%@include file="../common/common-foot.jsp"%>
+				<%@include file="../common/common_profile.jsp"%>
+				<%@include file="../common/common_heading.jsp"%>
+				<%@include file="portal_content.jsp"%>
+				<%@include file="../common/common_foot.jsp"%>
 			</div>
 			<!-- main content end-->
 		</section>
-		<%@include file="../common/common-javascript.jsp"%>
+		<%@include file="../common/common_javascript.jsp"%>
 	</body>
 </html>
